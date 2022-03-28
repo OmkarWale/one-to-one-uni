@@ -18,11 +18,13 @@ public class TestPan {
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		EntityTransaction entityTransaction = entityManager.getTransaction();
 		
+		//creating an object for Pan
 		Pan p = new Pan();
 		p.setPanNumber("AEKP1234");
 		p.setDate(LocalDate.now());
 		p.setContry("India");
 		
+		//creating an object for Person
 		Person person = new Person();
 		person.setName("Omkar");
 		person.setPhone(9561);
